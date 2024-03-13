@@ -1,2 +1,2 @@
-# DSA
-DSA problems
+# DSA Arrays
+DSA Array problems
