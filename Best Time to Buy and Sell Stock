@@ -1,0 +1,11 @@
+#Best Time to Buy and Sell Stock
+class Solution(object):
+    def maxProfit(self, prices):
+        mini = prices[0]
+        maxprofit = 0
+        n = len(prices)
+        for i in range(1, n):
+            cost = prices[i] - mini
+            maxprofit = max(maxprofit, cost)
+            mini = min(mini, prices[i])
+        return maxprofit
